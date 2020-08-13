@@ -1,0 +1,40 @@
+.list-article {
+  //background: grey;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: auto;
+  align-content: flex-start;
+  padding: 20px;
+}
+/*LIST ARTICLES*/
+.article {
+  flex-basis: 30%;
+  flex-grow: 1; //ta właściwość sprawia że nasze elementy rosną wykorzystując wolną przestrzeń
+  //można też nadać osobną klase aby rosły tylko niektóre z nich
+  @media(max-width:1023px){
+    flex-basis: 45%;
+  }
+  @media(max-width:799px){
+    flex-basis: 95%;
+  }
+  &--small {
+    padding: 10px 10px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    .article__image {
+      max-height: 200vh;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  &__title {
+    border-radius: 0 0 5px 5px ;
+    .article--small & {
+      //znaczy tyle samo co .article--small .article__title
+      padding: 10px 0 10px;
+      font-size: 1.8rem;
+      background-color: $color-default;
+    }
+  }
+}

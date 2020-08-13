@@ -1,0 +1,19 @@
+.settings {
+  background: white;
+  //flex-grow: 1; //pozwalać elementowi rosnąć aby zapełnić cały rząd
+  display: flex;
+  padding: 0 30px 0 50px;
+  align-items: center; //wyśrodkowanie w pionie
+  @media (max-width: 799px) {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  &__link-icon {
+    margin: 0 10px;
+    font-size: 3rem;
+    color: $color-main-medium;
+    &:hover {
+      color: $color-main;
+    }
+  }
+}

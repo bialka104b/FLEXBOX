@@ -1,0 +1,43 @@
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// IMPORT CZCIONKI
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap");
+$color-default: #b4f4fa;
+$color-main: #6762b6;
+$color-main-medium: rgb(178, 175, 231);
+$font-special: "pt sans", "roboto", "arial", "sans-serif";
+$font-default: "arial", "sans-serif";
+
+html {
+  background-image: url("../image/skincare-2357980_1920.jpg");
+  background-position-x: right;
+  font-family: $font-default;
+  font-size: 10px;
+}
+
+.wrapper {
+  //kontener
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: row;
+  align-content: flex-start;
+  //POZYCJA
+  max-width: 1000px;
+  margin: 0 auto;
+  //WYGLĄD
+  background: $color-main-medium;
+}
+
+//IMPORT4
+@import "_logo.scss"; //logo
+@import "_search.scss"; //wyszukiwarka
+@import "_settings.scss";//ustawienia
+@import "_menu.scss";//menu
+@import "_main-article";//dwa główne artykuły
+@import "_article.scss";//komponent article
+@import "_list-article";//lista artykułów
+@import "_footer.scss";//stopka

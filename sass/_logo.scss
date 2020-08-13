@@ -1,0 +1,13 @@
+.logo {
+  flex-basis: 200px; //rozszerzy element logo na 200px
+  //flex basis jest ważniejszy niż width
+  background-color: white;
+  flex-grow:1; //pozwalać elementowi rosnąć aby zapełnić cały rząd
+  
+  
+  &__image {
+    display:block;
+    width:100%;
+    
+  }
+}
